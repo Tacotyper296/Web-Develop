@@ -1,0 +1,391 @@
+/**Navegation Bar**/
+.navbar-brand {
+    text-transform: uppercase;
+}
+
+a.navbar-brand {
+    color: #fff0e0 !important;
+}
+
+.navbar-nav .nav-item.home .nav-link,
+.navbar-nav .nav-item .nav-link {
+    color: #fff0e0;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item.home .nav-link:hover,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.content { 
+    padding-top: 70px;
+}
+
+
+/**All html**/
+body {
+    position: relative;
+    background-color:rgba(7, 37, 77, 0.738);
+}
+
+/**Carousel**/
+nav {
+    z-index: 1;
+}
+
+.carousel-item {
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.item-1 h5,
+.item-1 p {
+    color: black;
+    text-align: center;
+    display: block;
+
+}
+
+.item-1 p {
+    color: black;
+    padding-bottom: 110px;
+}
+
+.item-2 h5,
+.item-2 p {
+    padding: 0;
+}
+
+.item-2 p {
+    padding-bottom: 80px;
+    color: #fff;
+}
+
+.item-3 h5,
+.item-3 p {
+    padding: 0;
+}
+
+.item-3 p {
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+
+/*** About Me ***/
+* {
+    box-sizing: border-box;
+}
+
+.container-about {
+    padding-top: 100px;
+}
+
+.all.content {
+    margin: 0 auto;
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.myheader h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Abril Fatface';
+    color: #fff0e0;
+    position: relative;
+}
+
+.myheader h1::before,
+.myheader h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-top: 2px solid #fff0e0;
+    width: 35%;
+}
+
+.myheader h1::before {
+    left: 0;
+}
+
+.myheader h1::after {
+    right: 0;
+}
+
+.column {
+    color: #fff0e0;
+    float: left;
+    width: calc(33.33333333333333% - 40px);
+    padding: 0 20px;
+    box-sizing: border-box;
+    /*Include padding in the width*/
+}
+
+@media only screen and (max-width: 767px) {
+    .column {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .all.content {
+        padding: 50px 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.main-text {
+    clear: both;
+    padding: 30px 20px;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+    /*remove extra spacing below the image*/
+}
+
+.intro.column p {
+    font-family: 'Abril Fatface';
+    font-size: 2em;
+    font-weight: 100;
+    -webkit-margin-before: 0;
+}
+
+.skills.column h3,
+.intro.column h2 {
+    font-family: 'Abril Fatface';
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff0e0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-margin-before: 0;
+}
+
+#skill-list {
+    font-family: 'Abril Fatface';
+    font-size: 2em;
+    font-weight: 100;
+    -webkit-margin-before: 0;
+}
+
+.main-text h3,
+p {
+    color: #fff0e0;
+}
+
+/**Work**/
+.container-work {
+    text-align: center;
+    padding-top: 90px;
+    color: #fff0e0;
+    font-size: 2em;
+    position: relative;
+}
+
+.container-work h1 {
+    position: relative; /* The text needs to be positioned */
+}
+
+.container-work h1::before,
+.container-work h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-top: 2px solid #fff0e0;
+    width: 40%;
+    transform: translateY(-50%); /* Lines centered vertically */
+}
+.container-work h1::before {
+    left: 0;
+}
+
+.container-work h1::after {
+    right: 0%;
+}
+
+.work-img {
+    display: block; /* needed to center the element with margin */
+    margin: auto; /* center the image inside the column if it's smaller */
+    max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
+    position: relative; /* is needed for .info position: absolute to work */
+  }
+  
+.info {
+    position: absolute; /* let's us move the text around and not worry about the image */
+    top: 15%; /* position the text 15% away from the top */
+    left: 22%;
+    color: #fff0e0;
+    font-family: Futura;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    line-height: 1.6;
+    display: none;
+}
+
+.proj-title { 
+    font-weight:100; 
+}
+
+
+/**FAQ**/
+.container-faq {
+    padding-top: 60px;
+}
+
+.main h1 {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Abril Fatface';
+    color: #fff0e0;
+    font-size: 2em;
+    position: relative;
+}
+
+.main h1::before,
+.main h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-top: 2px solid #fff0e0;
+    width: 40%;
+}
+
+.main h1::before {
+    left: 0;
+}
+
+.main h1::after {
+    right: 0;
+}
+
+.card-header {
+    background: rgba(7, 37, 77, 0.738);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header button {
+    color: #fff0e0;
+    padding: 0.5px;
+    font-family: 'Abril Fatface';
+    font-size: 1.1em;
+
+}
+
+.card-header button:hover {
+    color: #fff;
+    transition: color 600ms;
+    text-decoration: none;
+}
+
+.card-body {
+    font-size: 1.3em;
+    background-color: rgba(7, 37, 77, 0.738);
+}
+
+.card-body p {
+    color: #fff;
+}
+
+/*** Contact page ***/
+.container-contact {
+    padding-top: 100px;
+}
+
+.contact-header h1 {
+    text-align: center;
+    color: #fff0e0;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.row.contact {
+    margin: 0%;
+    display: block;
+}
+
+.column-contact,
+.column-group {
+    color: #fff0e0;
+    float: left;
+    padding: 30px;
+}
+
+#contact-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+#contact-list li {
+    margin: 10px 0;
+}
+
+#contact-list a {
+    text-decoration: none;
+}
+
+.form-control {
+    background-color: rgba(7, 37, 77, 0.738);
+}
+
+#contact {
+    background-image: url("../img/contacto.jpg");
+    background-attachment: fixed;
+    background-size: auto 100%;
+    height: 700px;
+    color: #fff0e0;
+}
+
+@media screen and (max-width: 768px) {
+    #contact {
+        height: auto 100%; /* Let the height adjust based on content */
+       
+        background-attachment: scroll; /* Disable fixed attachment for small screens */
+    }
+}
+
+/**Learn More**/
+.learnmore h2 {
+    color: #fff0e0;
+}
+
+.learnmore {
+    padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .modal-button button {
+      float: right;
+    }
+  }
+
+#resume {
+    height: 825px;
+    width: 100%;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+}
+
+#map1 {
+    width: 60%;
+    height: 250px;
+}
